@@ -19,7 +19,15 @@ public class ModExampleTest {
         assertThat(mod(80), equalTo(80));
     }
 
+    @Test
+    public void modN() throws Exception {
+        assertThat(mod(81), equalTo(1));
+    }
+
     private int mod(int n) {
+        if (n > 80) {
+            return n % 80;
+        }
         return n;
     }
 }
