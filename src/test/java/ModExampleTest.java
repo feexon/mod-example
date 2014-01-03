@@ -28,8 +28,8 @@ public class ModExampleTest {
 
     private int mod(int n) {
         if (n > 80) {
-            return (n-1) % 80+1;
+            return (n - 1) % 80 + 1;
         }
-        return n-1+1;
+        return (n - 1) % 80 + 1;
     }
 }
