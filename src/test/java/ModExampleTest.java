@@ -30,6 +30,6 @@ public class ModExampleTest {
         if (n > 80) {
             return (n-1) % 80+1;
         }
-        return n;
+        return n-1+1;
     }
 }
