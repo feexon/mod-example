@@ -26,7 +26,12 @@ public class ModExampleTest {
         assertThat(mod(161), equalTo(1));
     }
 
+    @Test
+    public void mod0() throws Exception {
+        assertThat(mod(0), equalTo(80));
+    }
+
     private int mod(int n) {
-        return (n - 1) % 80 + 1;
+        return (80 + n - 1) % 80 + 1;
     }
 }
