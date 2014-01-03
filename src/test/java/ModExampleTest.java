@@ -22,11 +22,13 @@ public class ModExampleTest {
     @Test
     public void modN() throws Exception {
         assertThat(mod(81), equalTo(1));
+        assertThat(mod(160), equalTo(80));
+        assertThat(mod(161), equalTo(1));
     }
 
     private int mod(int n) {
         if (n > 80) {
-            return n % 80;
+            return (n-1) % 80+1;
         }
         return n;
     }
